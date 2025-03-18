@@ -67,22 +67,24 @@ void selection(char op)
     sep_middle();
     switch (op)
     {
-        case '1':
+        case '1' : {
             std::cout << "FILL WITH\n   preenche a tabela com o separador selecionado.\n" << std::endl;
             std::cout << "Select the sep with one char" << std::endl;
             std::cin >> sep;
             fillwith(sep, col_width); //function that show how setw works
             break;
-        case '2':
+        }
+        case '2' : {
             std::cout << "INTERNAL JUSTIFY\n  justify the negative signal. \n" << std::endl;
             std::cout << "Enter a number negative" << std::endl;
             std::cin >> n;
             if(n < 0)
                 internal_just(n, col_width); //function that show how internal justify works
-                else
+            else
                 internal_just(-n, col_width); //function that show how internal justify works    
-                break;    
-        case '3':
+            break;
+        }    
+        case '3' : {
             std::cout << "SHOW POSIYTIVE NUMBER\n   show the signal of positive.\n" << std::endl;
             std::cout << "Enter a number" << std::endl;
             std::cin >> n;
@@ -91,30 +93,36 @@ void selection(char op)
             else
                 showpos_nbr(-n); //function that show how internal justify works    
             break;
-        case '4':
+        }
+        case '4' : {
             std::cout << "NUMBER SYSTEM\n   show the number in different base.\n" << std::endl;
             std::cout << "Enter a number" << std::endl;
             std::cin >> n;
             number_system(n); //function that show how showbase works
             break;
-        case '5':
+        }
+        case '5' : {
             std::cout << "BOOLEAN CONDITION\n   show the boolean in true or false.\n" << std::endl;
             boolean_cond(); //function that show how boolalpha works
             break;
-        case '6':
+        }
+        case '6' : {
             std::cout << "SCIENTIFIC AND FIXED\n   show the number in scientific or fixed.\n" << std::endl;
             scientific_fixed(); //function that show how uppercase works
             break;
-        case '7':
+        }
+        case '7' : {
             std::cout << "PRECISION\n   show the number with precision.\n" << std::endl;
             precision_nbr(); //function that show how setprecision works
             break;
-        case '8':
+        }
+        case '8' :{
             std::cout << "SHOW POINT\n   show the number with point.\n" << std::endl;
             std::cout << "Enter a number with comma" << std::endl;
             std::cin >> n1;
             showpoint_nbr(n1); //function that show how showpoint works
             break;
+        }
         default:
             break;
     }
