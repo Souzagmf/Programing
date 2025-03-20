@@ -4,20 +4,20 @@
 
 int main(void)
 {
-    double weight {7.49963};
+    float weight {7.49963};
     std::cout << "FLOOR | CEIL | ROUND " << std::endl;
     std::cout << "Weight rouded to floor is: " << std::floor(weight) << std::endl;
     std::cout << "Weight rouded to ceil is: " << std::ceil(weight) << std::endl;
     std::cout << "Weight rouded to round is: " << std::round(weight) << std::endl;
     std::cout << std::endl;
 
-    double savings {-5000};
+    float savings {-5000};
     std::cout << "ABS" << std::endl;
     std::cout << "Abs of weight is: " << std::abs(weight) << std::endl;
     std::cout << "Abs of savings is: " << std::abs(savings) << std::endl;
     std::cout << std::endl;
 
-    double exponencial = std::exp(10);
+    float exponencial = std::exp(10);
     std::cout << "EXP" << std::endl;
     std::cout << "Exponencial of 10 is: " << exponencial << std::endl;
     std::cout << std::endl;

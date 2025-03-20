@@ -8,7 +8,7 @@ void continue_screen(void);
 void scientific_fixed(void);
 void boolean_cond(void);
 void precision_nbr(void);
-void showpoint_nbr(double n1);
+void showpoint_nbr(float n1);
 void selection(char op);
 void number_system(int nbr);
 void showpos_nbr(int nbr);
@@ -63,7 +63,7 @@ void selection(char op)
     int col_width {15};
     int n = 0;
     char sep = ' ';
-    double n1 = 0;
+    float n1 = 0;
     sep_middle();
     switch (op)
     {
@@ -239,7 +239,7 @@ void showpos_nbr(int nbr)
 void number_system(int nbr)
 {
     int nbr2 = nbr * (-1,56);
-    double nbr3 = nbr * 1.698563;
+    float nbr3 = nbr * 1.698563;
 
     std::cout << "NUMBER SYSTEM" << std::endl;
     std::cout << std::endl;
@@ -256,7 +256,7 @@ void number_system(int nbr)
     std::cout << "Hexadecimal: " << std::hex << nbr2 << std::endl; //hexadecimal
     std::cout << "Octal: " << std::oct << nbr2 << std::endl; //octal
     std::cout << std::endl;
-    //Formats to double number
+    //Formats to float number
     std::cout << std::showbase; //show the base of the number
     std::cout << "Decimal: " << std::dec << nbr3 << std::endl; //decimal
     std::cout << "Hexadecimal: " << std::hex << nbr3 << std::endl; //hexadecimal
@@ -268,9 +268,9 @@ void number_system(int nbr)
 
 void scientific_fixed(void)
 {
-    double n1 = 3.1415926535897932384626433832795;
-    double n2 = 2658.0;
-    double n3 = 1.34e-10;
+    float n1 = 3.1415926535897932384626433832795;
+    float n2 = 2658.0;
+    float n3 = 1.34e-10;
 
     std::cout << "SCIENTIFIC AND FIXED" << std::endl;
     std::cout << std::endl;
@@ -304,7 +304,7 @@ void scientific_fixed(void)
 
 void precision_nbr(void)
 {
-    double n1 = 3.1415926535897932384626433832795; //If have mor size than this, the rest will be garbage
+    float n1 = 3.1415926535897932384626433832795; //If have mor size than this, the rest will be garbage
     
     std::cout << "PRECISION" << std::endl;
     std::cout << std::endl;
@@ -318,7 +318,7 @@ void precision_nbr(void)
 
 }
 
-void showpoint_nbr(double n1)
+void showpoint_nbr(float n1)
 {
     std::cout << "NO POINT SHOW" << std::endl;
     std::cout << std::endl;
