@@ -13,7 +13,7 @@ void invalid_text(void);
 void result_text(void);
 bool inError(void);
 void waitInput(void);
-bool endProgram(void);
+bool endProgram(void); 
 //*******************//
 
 //*******  Print a string  ******//
