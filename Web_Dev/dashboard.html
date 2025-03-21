@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="dashboard_style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Dashboard</h1>
+	</header>
+	<div class="container">
+		<aside class="sidebar">
+			<nav>
+				<ul>
+					<li><a href="#" onclick="showContent('home')">Home</a></li>
+					<li><a href="#" onclick="showContent('profile')">Profile</a></li>
+					<li><a href="./index.html">Logout</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="content">
+			<section id="home" class="content-section">
+				<div class="content_title">
+					<h2>This is home</h2>
+				</div>
+				<div class="content_box">
+					<div class="content_section">
+						<ul>
+							<li>
+								<p>This were to be the main HOME of dashboard. Now it's on progress</p>
+							</li>
+							<li>
+								<p>Maybe on future this can be changed</p>
+							</li>
+							<li>
+								<p>let's follow the project...</p>
+							</li>
+					</div>
+					<div class="content_section">
+						<div class="content_section_image">
+							<img src="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="Placeholder Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="profile" class="content-section" style="display: none;">
+				<div class="content_title">
+					<h2>This is Profile data</h2>
+				</div>
+				<div class="content_box">
+					<div class="content_section">
+						<ul>
+							<li>
+								<p>NAME: Josh Mayers</p>
+							</li>
+							<li>
+								<p>AGE: 35</p>
+							</li>
+							<li>
+								<p>BIO:</p>
+								<div class="label_bio">
+									<p>Josh Mayer is a software engineer with over 10 years of experience in web
+										development. He enjoys
+										coding, hiking, and playing video games.</p>
+								</div>
+							</li>
+					</div>
+					<div class="content_section">
+						<div class="content_section_image">
+							<img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+								alt="Placeholder Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="logout" class="content-section" style="display: none;">
+				<div class="content_title">
+					<h2>Logout</h2>
+				</div>
+				<div class="content_box">
+					<p>You have been logged out. Thank you for using our service!</p>
+				</div>
+		</main>
+	</div>
+	<footer>
+		<p>&copy; 2025 Souzagmf</p>
+	</footer>
+	<script src="dashboard_script.js"></script>
+</body>
+
+</html>
