@@ -1,3 +1,3 @@
 # Programing
 
-My journey remember c++.
+My journey remember my language programing.
